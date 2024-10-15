@@ -12,7 +12,7 @@ int countSolutions(int a[], int n, int m, int sum = 0, int index = 0) {
     int count = 0;
 
     for (int x = 1; sum + a[index] * x <= m; ++x) {
-        count += countSolutions(a, n, m, sum + a[index] * x, index + 1);
+        count += countSolutions(a, n, m, sum + a[index] * x, index + 1); 
     }
 
     return count;
